@@ -1,0 +1,62 @@
+body {
+    background-color: rgb(1, 21, 72);
+}
+
+.memes {
+    max-width: 650px;
+    margin: 20px auto;
+    font: 25px Arial, sans-serif;
+    color: rgb(247, 146, 203);
+    border: 1px solid rgb(247, 146, 203);
+}
+
+.cunt {
+    display: none;
+    padding: 0px 15px;
+    margin: auto;
+}
+
+input {
+    appearance: none;
+    position: absolute;
+}
+
+.tit {
+    cursor: pointer;
+    display: block;
+    color: rgb(247, 146, 203);
+    padding: 10px 15px;
+    transition: background 0.5s ease-out;
+    position: relative;
+
+}
+.cunt:hover{
+    cursor: pointer; 
+}
+.tit:hover {
+    background-color: rgb(141, 38, 96);   
+}
+
+.tit::after {
+    content: '+';
+    float: right;
+}
+
+input:checked ~ .cunt {
+display: block;
+}
+
+input:checked + .tit::after {
+    content: '-';
+}
+
+input:checked + .tit {
+    background-color: rgb(141, 38, 96);
+    color: rgb(247, 146, 203);   
+}
+
+img {
+    max-width: 550px;
+}
+
+
